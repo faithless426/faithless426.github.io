@@ -40,7 +40,7 @@ repo_trophies:
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
-rss_icon: true
+rss_icon: false
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -124,7 +124,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: Dimensional Dialogue # blog_name will be displayed in your blog page
-blog_description: some ramblings about things I found cool or want ot talk about
+blog_description: some ramblings about things I found cool or want to talk about
 permalink: /blog/:year/:title/
 
 # Pagination
