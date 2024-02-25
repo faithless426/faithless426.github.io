@@ -2,7 +2,7 @@
     layout: page
     title: Classical Mechanics #1
     description: Newtons Equations, Galilean Spacetime, Calculus of Variations
-    category: classical mechanics 
+    category: classical mechanics
     img: E5GDY.png
     ---
 
