@@ -3,7 +3,8 @@
     title: Classical Mechanics #1
     description: Newtons Equations, Galilean Spacetime, Calculus of Variations
     category: classical mechanics
-    img: E5GDY.png
+    img: assests/img/E5GDY.png
+    
     ---
 
 This is the first section of notes for Classical Mechanics!
