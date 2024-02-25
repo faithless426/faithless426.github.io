@@ -5,7 +5,7 @@ permalink: /projects/
 description: This is a collection of notes from my studies. They will be a mix of lecture notes, textbooks, and added content from myself. These will be in textook style as if I was to teach a course to help those who want to learn these topics. The plan is to motivate topics mathematically and physically, attempting to bridge the two together.
 nav: true
 nav_order: 3
-display_categories: [classical mechanics]
+display_categories: [classical mechanics, electricity & magnetism, statistical mechanics, quantum mechanics]
 horizontal: false
 ---
 
