@@ -4,6 +4,7 @@
     description: Newtons Equations, Galilean Spacetime, Calculus of Variations
     img: assets/img/E5GDY.png
     category: classical mechanics
+    importance: 1
     ---
 
 This is the first section of notes for Classical Mechanics!
