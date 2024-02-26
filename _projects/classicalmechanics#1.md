@@ -112,11 +112,11 @@ Our integral then becomes
 
 $$\begin{aligned}m\int_{x_i}^{x_f} \frac{dv}{dt}dx&=m\int_{t_i}^{t_f} \frac{dv}{dt}vdt\\&=m\int_{t_i}^{t_f}vdv\\&=\frac{1}{2}mv^{2}_{f}-\frac{1}{2}mv^{2}_{i}=\int_{x_i}^{x_f} F(x)dx\end{aligned}$$
 
-We're very free to make this a function of $x$ by making the previous integral an indefnite one by the changing the bounds. 
+We're very free to make this a function of $$x$$ by making the previous integral an indefnite one by the changing the bounds. 
 
-We'll call the quantity $$\frac{1}{2}mv^2$$ the kinetic energy ($K$) and refer to the result we derived as the Work-Energy Theorem. I recommend you use this to solve the equation for the harmonic oscillator ($F=-kx$) for practice. 
+We'll call the quantity $$\frac{1}{2}mv^2$$ the kinetic energy ($$K$$) and refer to the result we derived as the Work-Energy Theorem. I recommend you use this to solve the equation for the harmonic oscillator ($$F=-kx$$) for practice. 
 
-Now to do this in the multi-dimensional case. Imagine we have a path $$\gamma$$ such that $$\gamma:[a,b]\rightarrow \mathbb{R}^3$$, and have a force $$\vec{F}$$ that successfuly takes our mass from point $a$ to $b$. This curve has some infinitesimal length that we'll call $d\vec{r}$ and the force acts on this every point on this path which is represented as a dot product $$\vec{F}\cdot d\vec{r}$$. We'll go through a similar procress as above, i.e. 
+Now to do this in the multi-dimensional case. Imagine we have a path $$\gamma$$ such that $$\gamma:[a,b]\rightarrow \mathbb{R}^3$$, and have a force $$\vec{F}$$ that successfuly takes our mass from point $$a$$ to $$b$$. This curve has some infinitesimal length that we'll call $d\vec{r}$ and the force acts on this every point on this path which is represented as a dot product $$\vec{F}\cdot d\vec{r}$$. We'll go through a similar procress as above, i.e. 
 
 $$\vec{F}\cdot d\vec{r}=m\frac{d\vec{v}}{dt}\cdot d\vec{r}$$
 
