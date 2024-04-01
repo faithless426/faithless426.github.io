@@ -4,6 +4,7 @@ title: Classical Mechanics 1
 description: Newtons Equations, Galilean Spacetime, Calculus of Variations
 img: assets/img/E5GDY.png
 category: classical mechanics
+tikzjax: true
 ---
 
 This is the first section of notes for Classical Mechanics!
