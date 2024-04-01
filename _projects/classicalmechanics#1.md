@@ -70,13 +70,13 @@ $$\begin{aligned} \vec{F} &=m\vec{a}\\ &=m\frac{d\vec{v}}{dt}\\ &=m\frac{d^2\vec
 
 Where $$\vec{a}$$ is the acceleration, $\vec{v}$ is the velocity, and $$\vec{r}$$ is the position. (I may at times forget the vector notation). We will assume that we live in $$\mathbb{R}^3$$ with time $$t\in\mathbb{R}$$ being a parameter (i.e living in $$\mathbb{R}\times \mathbb{R}^3$$, and for those more mathematically inclined I will later explain this is an affine space $$A^4$$). 
 
-We see that Newton's equations gives us $$3N$$ for $N$ particles, but for the most part we'll focus on the single particle case. As an example let's do the simple case of a constant force, gravity.
+We see that Newton's equations gives us $$3N$$ for $$N$$ particles, but for the most part we'll focus on the single particle case. As an example let's do the simple case of a constant force, gravity.
 
 The force of gravity is given by the following equation 
 
 $$\vec{F}=-m\vec{g}$$
 
-with $$g=9.81$$ being the graviational constant which acts in the $z$ direction. Our differential equation then becomes 
+with $$g=9.81$$ being the graviational constant which acts in the $$z$$ direction. Our differential equation then becomes 
 
 $$\begin{aligned}m\vec{a}&=-m\vec{g}\\\begin{pmatrix}\frac{d^2x}{dt^2}\\\frac{d^2y}{dt^2}\\\frac{d^2z}{dt^2}\end{pmatrix}&=\begin{pmatrix}0\\0\\-g\end{pmatrix}\end{aligned}$$
 
@@ -156,7 +156,7 @@ With a simple rearrangement we finally get
 
 $$K_f+U_f=K_i+U_i$$
 
-This is known as the Conservation of Energy. If you couldn't tell, this is a massive. With this we can determine the dynamics of a system from some initial or final conditions, but this does beg the question. We know that the overall energy is conserved for a system, what about over time? Let's define the total energy $E$ as $K+U$, and then we'll take the time derivative of this
+This is known as the Conservation of Energy. If you couldn't tell, this is a massive. With this we can determine the dynamics of a system from some initial or final conditions, but this does beg the question. We know that the overall energy is conserved for a system, what about over time? Let's define the total energy $$E$$ as $$K+U$$, and then we'll take the time derivative of this
 
 $$\begin{aligned}\frac{dE}{dt}&=\frac{d}{dt}(K+U)=\frac{d}{dt}\left(\frac{1}{2}m(\vec{v}\cdot\vec{v})+U(\vec{r})\right)=\frac{1}{2}m\frac{d}{dt}(\vec{v}\cdot\vec{v})+\frac{\partial U}{\partial \vec{r}}\frac{d\vec{r}}{dt}\\&= m\left(\frac{d\vec{v}}{dt}\cdot\vec{v}\right)+\frac{\partial U}{\partial \vec{r}}\frac{d\vec{r}}{dt}=\vec{v}\left(m\vec{a}+\frac{\partial U}{\partial\vec{r}}\right)=\vec{v}(\vec{F}-\vec{F})=0\end{aligned}$$
 
@@ -166,7 +166,37 @@ This should hopefully have been a more chill introduction to basic Newtonian mec
 
 Next we'll be going over the nitty gritty mathematical details of what we just talked about (definitely not enough for a course in the resprective math subjects.....that sounds like a good idea) and also give an introduction to the calculus of variations. 
 
-However...we can still have some physical motivation for why we describe the math as such. If you've ever dropped anything it should be fairly obvious that it doesn't matter where you are when it drops, it will drop regardless. If you've ever hanged on monkey bars and dropped some ice cream you were holding it still dropped the same way AND the kid running across the way also saw it drop (they're not moving at close to the speed of light so $$c=\infty$$ for now) in the same way. This simple, albeit not the best, experiment on the isotropy of the universe shows us that the universe simply doesn't have a preffered direction. So things like a center of the universe doesn't make sense. 
+However...we can still have some physical motivation for why we describe the math as such. If you've ever dropped anything it should be fairly obvious that it doesn't matter where you are when it drops, it will drop regardless. If you've ever hanged on monkey bars and dropped some ice cream you were holding it still dropped the same way AND the kid running across the way also saw it drop (they're not moving at close to the speed of light so $$c=\infty$$ for now) in the same way. This simple, albeit not the best, experiment on the isotropy of the universe shows us that the universe simply doesn't have a preffered direction. So things like a center of the universe doesn't make sense. We will demonstrate this invariance, starting with the addition of velocity. 
+
+Assume we have some local coordinate system, $$S$$. In this coordinate system things are as they should be, objects in this coordinate system have nicely definied positions. Now assume we have another coordinate system $$S'$$ that is moving from $$S$$ at a constant velocity of $$v$$. Remember the objects in $$S$$ are also in $$S'$$. From the perspective of $S'$ if the objects are still in the $$S$$ coordinate system they are moving backward, i.e.
+
+$$\begin{pmatrix}x'\\ y'\\ z'\\ t'\end{pmatrix}\rightarrow \begin{pmatrix}x-vt\\ y'\\ z'\\ t'\end{pmatrix} $$
+
+Or from the perspective of $$S$$ things are moving forward, 
+
+$$\begin{pmatrix}x\\ y\\ z\\ t\end{pmatrix}\rightarrow \begin{pmatrix}x'+vt\\ y\\ z\\ t\end{pmatrix} $$
+
+Ok great, but you might ask why we assumed that the velocity has to be constant? Let's work the relative velocitie and acceleration in the $$x$$-direction.
+
+$$x=x'+vt\implies \frac{dx}{dt}=\frac{dx'}{dt}+v\implies \frac{d^2x}{dt^2}=\frac{d^2x'}{dt^2}$$
+
+<script type="text/tikz">
+\begin{tikzpicture}
+    \begin{document}
+\begin{tikzpicture}
+\draw[thin,gray] (0,0) grid(5,5);
+\draw[thick] (0,0) -- (0,5) node[left=1]{$S$};
+\draw[thick] (0,0) -- (5,0);
+\draw[thin,gray] (6,0) grid(11,5);
+\draw[thick] (6,0) -- (11,0);
+\draw[thick] (6,0) -- (6,5) node[left=1]{$S'$};
+\draw[->,thick,red] (6,0) -- (9,4) node[midway, above]{$\vec{r'}$};
+\draw[->,blue,thick] (0,0) -- (9,4) node[midway, above]{$\vec{r}$};
+\draw[->,black!30!green!,thick] (0,0) -- (6,0) node[midway, below]{$\vec{v}t$};
+\end{tikzpicture}
+</script>
+
+We see here that constant velocity doesn't change Newton's equations at all! The same thing can be shown in the $$S'$$ coordinate system (we'll now simlpy call this a frame) the sign for the velocity will just change. The transformation we just did is called a $$\textit{Galilean transformation}$$ and is our first introduction into the notion of symmetries(more on this later). 
 
 We can formalize this idea in mathematics with the use of an affine space that we will call Galilean spacetime. Let's first define what this space is exactly 
 
