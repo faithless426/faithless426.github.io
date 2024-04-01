@@ -182,8 +182,6 @@ $$x=x'+vt\implies \frac{dx}{dt}=\frac{dx'}{dt}+v\implies \frac{d^2x}{dt^2}=\frac
 
 <script type="text/tikz">
 \begin{tikzpicture}
-    \begin{document}
-\begin{tikzpicture}
 \draw[thin,gray] (0,0) grid(5,5);
 \draw[thick] (0,0) -- (0,5) node[left=1]{$S$};
 \draw[thick] (0,0) -- (5,0);
