@@ -181,6 +181,7 @@ Ok great, but you might ask why we assumed that the velocity has to be constant?
 
 $$x=x'+vt\implies \frac{dx}{dt}=\frac{dx'}{dt}+v\implies \frac{d^2x}{dt^2}=\frac{d^2x'}{dt^2}$$
 
+<div align="center">
 <script type="text/tikz">
 \begin{tikzpicture}
 \draw[thin,gray] (0,0) grid(5,5);
@@ -194,6 +195,7 @@ $$x=x'+vt\implies \frac{dx}{dt}=\frac{dx'}{dt}+v\implies \frac{d^2x}{dt^2}=\frac
 \draw[->,black!30!green!,thick] (0,0) -- (6,0) node[midway, below]{$\vec{v}t$};
 \end{tikzpicture}
 </script>
+</div>
 
 We see here that constant velocity doesn't change Newton's equations at all! The same thing can be shown in the $$S'$$ coordinate system (we'll now simlpy call this a frame) the sign for the velocity will just change. The transformation we just did is called a $$\textit{Galilean transformation}$$ and is our first introduction into the notion of symmetries(more on this later). 
 
