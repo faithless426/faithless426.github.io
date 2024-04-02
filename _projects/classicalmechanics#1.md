@@ -193,6 +193,7 @@ $$x=x'+vt\implies \frac{dx}{dt}=\frac{dx'}{dt}+v\implies \frac{d^2x}{dt^2}=\frac
 \draw[->,thick,red] (6,0) -- (9,4) node[midway, above]{$\vec{r'}$};
 \draw[->,blue,thick] (0,0) -- (9,4) node[midway, above]{$\vec{r}$};
 \draw[->,black!30!green!,thick] (0,0) -- (6,0) node[midway, below]{$\vec{v}t$};
+\draw[->,thick] (6,4) -- (7,4) node[midway, above]{$\vec{v}$};
 \end{tikzpicture}
 </script>
 </div>
@@ -215,14 +216,48 @@ These properties look a bit like addition don't they? Following general notation
 
 Instead what we can do is fix $$x\in\mathbb{A}$$ (i.e fix some sort of relative origin) and this will let us define our usual vector space operations. For instance how about addition?
 
-$$y_1+y_2=\left((y_1-x)+(y_2-x)\right)$$
+$$y_1+y_2=\left((y_1-x)+(y_2-x)\right)+x$$
 
 Scalar multiplication is defined similarly
 
 $$ay_1=\left(a(y_1-x)\right)$$
 
-It should be fairly clear that when we fix this "origin" $$\mathbb{A} \cong V$$. 
+It should be fairly clear that when we fix this "origin" $$\mathbb{A} \cong V$$. Don't take this for granted you should really prove this. See a linear algebra textbook (or maybe some notes coming soon) and go through the axioms of vector spaces. An incredibly thorough treatment is given by Hoffamn and Kunze "Linear Algebra" and Halmos "Finite Dimensional Vector Spaces". Another good combination is "Linear Algebra Done Right" by Axler and "Linear Algebra Done Wrong" by Treil. 
 
-Great! Now that we've sort of unveiled the structure of affine spaces it makes sense to study functions on them, mainly understanding transformations from one affine space to another. 
+To really drive the notation and intuition let's construct this step by step
 
-From linear algebra we know that the most general linear transformations say $$f:V\rightarrow U$$
+First we have our affine space, $A$ with points $y_1,y_2,x$
+
+<script type="text/tikz">
+\begin{tikzpicture}[scale=1,transform shape]
+    \draw (0,0) node[circle,fill,inner sep=1pt]{};
+    \draw (0,0) node[left,]{$y_1$} ;
+    \draw (-2,2) node[circle,fill,inner sep=1pt]{};
+    \draw (-2,2) node[left]{$y_2$};
+    \draw (-3,-3) node[circle,fill,inner sep=1pt]{};
+    \draw (-3,-3) node[left]{$x$};
+    \draw (0,0) circle[radius=5];
+    \draw (4,4) node[]{$A$};
+\end{tikzpicture}
+</script>
+
+Next we'll construct a vector using our "origin" $x$. The vectors respectively are $y_1-x,y_2-x \in V$. Remember these are not elements in our affine space $A$.
+
+\begin{tikzpicture}[scale=1,transform shape]
+    \draw (0,0) node[circle,fill,inner sep=1pt]{};
+    \draw (0,0) node[left,]{$y_1$} ;
+    \draw (-2,2) node[circle,fill,inner sep=1pt]{};
+    \draw (-2,2) node[left]{$y_2$};
+    \draw (-3,-3) node[circle,fill,inner sep=1pt]{};
+    \draw (-3,-3) node[left]{$x$};
+    \draw (0,0) circle[radius=5];
+    \draw (4,4) node[]{$A$};
+    \draw[->, thick,blue, dotted] (-3,-3) -- (0,0)node[midway,left]{$y_1-x$};
+    \draw[->, thick,red, dotted] (-3,-3) -- (-2,2) node[midway,left]{$y_2-x$};
+\end{tikzpicture}
+
+
+Great! Now that we've sort of unveiled the structure of affine spaces it makes sense to study functions on them, mainly understanding transformations from one affine space to another. We propose that the most general affine transformation takes the following form
+
+
+
