@@ -220,7 +220,7 @@ $$y_1+y_2=\left((y_1-x)+(y_2-x)\right)+x$$
 
 Scalar multiplication is defined similarly
 
-$$ay_1=\left(a(y_1-x)\right)$$
+$$ay_1=\left(a(y_1-x)\right)+x$$
 
 It should be fairly clear that when we fix this "origin" $$\mathbb{A} \cong V$$. Don't take this for granted you should really prove this. See a linear algebra textbook (or maybe some notes coming soon) and go through the axioms of vector spaces. An incredibly thorough treatment is given by Hoffamn and Kunze "Linear Algebra" and Halmos "Finite Dimensional Vector Spaces". Another good combination is "Linear Algebra Done Right" by Axler and "Linear Algebra Done Wrong" by Treil. 
 
@@ -286,6 +286,7 @@ Finally we "add" our "origin" $$x$$ to put this point into our affine space.
 
 <div align= "center">
 <script type="text/tikz">
+\begin{tikzpicture}[scale=1,transform shape]
     \draw (0,0) node[circle,fill,inner sep=1pt]{};
     \draw (0,0) node[left,]{$y_1$} ;
     \draw (-2,2) node[circle,fill,inner sep=1pt]{};
@@ -299,6 +300,7 @@ Finally we "add" our "origin" $$x$$ to put this point into our affine space.
     \draw[->, thick,black!30!green!, dotted] (-3,-3) -- (1,5) node[midway,right]{$(y_1 - x)+(y_2 - x)$};
     \draw (1,5) node[circle,fill,inner sep=1pt]{};
     \draw (1,5) node[left]{$y_1+y_2$};
+\end{tikzpicture}  
 </script>
 </div>
 
