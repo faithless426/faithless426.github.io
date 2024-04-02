@@ -226,7 +226,7 @@ It should be fairly clear that when we fix this "origin" $$\mathbb{A} \cong V$$.
 
 To really drive the notation and intuition let's construct this step by step
 
-First we have our affine space, $A$ with points $y_1,y_2,x$
+First we have our affine space, $$A$$ with points $$y_1,y_2,x$$
 
 <script type="text/tikz">
 \begin{tikzpicture}[scale=1,transform shape]
@@ -241,8 +241,9 @@ First we have our affine space, $A$ with points $y_1,y_2,x$
 \end{tikzpicture}
 </script>
 
-Next we'll construct a vector using our "origin" $x$. The vectors respectively are $y_1-x,y_2-x \in V$. Remember these are not elements in our affine space $A$.
+Next we'll construct a vector using our "origin" $$x$$. The vectors respectively are $$y_1-x,y_2-x \in V$$. Remember these are not elements in our affine space $$A$$.
 
+<script type="text/tikz">
 \begin{tikzpicture}[scale=1,transform shape]
     \draw (0,0) node[circle,fill,inner sep=1pt]{};
     \draw (0,0) node[left,]{$y_1$} ;
@@ -255,6 +256,7 @@ Next we'll construct a vector using our "origin" $x$. The vectors respectively a
     \draw[->, thick,blue, dotted] (-3,-3) -- (0,0)node[midway,left]{$y_1-x$};
     \draw[->, thick,red, dotted] (-3,-3) -- (-2,2) node[midway,left]{$y_2-x$};
 \end{tikzpicture}
+</script>
 
 
 Great! Now that we've sort of unveiled the structure of affine spaces it makes sense to study functions on them, mainly understanding transformations from one affine space to another. We propose that the most general affine transformation takes the following form
