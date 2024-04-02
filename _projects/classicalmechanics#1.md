@@ -228,6 +228,7 @@ To really drive the notation and intuition let's construct this step by step
 
 First we have our affine space, $$A$$ with points $$y_1,y_2,x$$
 
+<div align= "center">
 <script type="text/tikz">
 \begin{tikzpicture}[scale=1,transform shape]
     \draw (0,0) node[circle,fill,inner sep=1pt]{};
@@ -240,9 +241,11 @@ First we have our affine space, $$A$$ with points $$y_1,y_2,x$$
     \draw (4,4) node[]{$A$};
 \end{tikzpicture}
 </script>
+</div>
 
 Next we'll construct a vector using our "origin" $$x$$. The vectors respectively are $$y_1-x,y_2-x \in V$$. Remember these are not elements in our affine space $$A$$.
 
+<div align= "center">
 <script type="text/tikz">
 \begin{tikzpicture}[scale=1,transform shape]
     \draw (0,0) node[circle,fill,inner sep=1pt]{};
@@ -257,6 +260,7 @@ Next we'll construct a vector using our "origin" $$x$$. The vectors respectively
     \draw[->, thick,red, dotted] (-3,-3) -- (-2,2) node[midway,left]{$y_2-x$};
 \end{tikzpicture}
 </script>
+</div>
 
 
 Great! Now that we've sort of unveiled the structure of affine spaces it makes sense to study functions on them, mainly understanding transformations from one affine space to another. We propose that the most general affine transformation takes the following form
