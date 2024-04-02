@@ -277,7 +277,7 @@ Now we can just add these vectors as we would in a normal vector space
     \draw (4,4) node[]{$A$};
     \draw[->, thick,blue, dotted] (-3,-3) -- (0,0)node[midway,right=2,]{$y_1-x$};
     \draw[->, thick,red, dotted] (-3,-3) -- (-2,2) node[midway,left]{$y_2-x$};
-    \draw[->, thick,black!30!green!, dotted] (-3,-3) -- (1,5) node[midway,right]{$(y_1-x)+(y_2-x)$};
+    \draw[->, thick,black!30!green!, dotted] (-3,-3) -- (1,5) node[midway,right]{$(y_1 - x)+(y_2 - x)$};
 \end{tikzpicture}
 </script>
 </div>
@@ -294,9 +294,9 @@ Finally we "add" our "origin" $$x$$ to put this point into our affine space.
     \draw (-3,-3) node[left]{$x$};
     \draw (0,0) circle[radius=6];
     \draw (4,4) node[]{$A$};
-    \draw[->, thick,blue, dotted] (-3,-3) -- (0,0)node[midway,right=2,]{$y_1-x$};
-    \draw[->, thick,red, dotted] (-3,-3) -- (-2,2) node[midway,left]{$y_2-x$};
-    \draw[->, thick,black!30!green!, dotted] (-3,-3) -- (1,5) node[midway,right]{$(y_1-x)+(y_2-x)$};
+    \draw[->, thick,blue, dotted] (-3,-3) -- (0,0)node[midway,right=2,]{$y_1 - x$};
+    \draw[->, thick,red, dotted] (-3,-3) -- (-2,2) node[midway,left]{$y_2 - x$};
+    \draw[->, thick,black!30!green!, dotted] (-3,-3) -- (1,5) node[midway,right]{$(y_1 - x)+(y_2 - x)$};
     \draw (1,5) node[circle,fill,inner sep=1pt]{};
     \draw (1,5) node[left]{$y_1+y_2$};
 </script>
