@@ -237,7 +237,7 @@ First we have our affine space, $$A$$ with points $$y_1,y_2,x$$
     \draw (-2,2) node[left]{$y_2$};
     \draw (-3,-3) node[circle,fill,inner sep=1pt]{};
     \draw (-3,-3) node[left]{$x$};
-    \draw (0,0) circle[radius=5];
+    \draw (0,0) circle[radius=6];
     \draw (4,4) node[]{$A$};
 \end{tikzpicture}
 </script>
@@ -254,13 +254,74 @@ Next we'll construct a vector using our "origin" $$x$$. The vectors respectively
     \draw (-2,2) node[left]{$y_2$};
     \draw (-3,-3) node[circle,fill,inner sep=1pt]{};
     \draw (-3,-3) node[left]{$x$};
-    \draw (0,0) circle[radius=5];
+    \draw (0,0) circle[radius=6];
     \draw (4,4) node[]{$A$};
-    \draw[->, thick,blue, dotted] (-3,-3) -- (0,0)node[midway,left]{$y_1-x$};
-    \draw[->, thick,red, dotted] (-3,-3) -- (-2,2) node[midway,left]{$y_2-x$};
+    \draw[->, thick,blue, dotted] (-3,-3) -- (0,0)node[midway,right=2]{$y_1 - x$};
+    \draw[->, thick,red, dotted] (-3,-3) -- (-2,2) node[midway,left]{$y_2 - x$};
 \end{tikzpicture}
 </script>
 </div>
+
+Now we can just add these vectors as we would in a normal vector space
+
+<div align= "center">
+<script type="text/tikz">
+\begin{tikzpicture}[scale=1,transform shape]
+    \draw (0,0) node[circle,fill,inner sep=1pt]{};
+    \draw (0,0) node[left,]{$y_1$} ;
+    \draw (-2,2) node[circle,fill,inner sep=1pt]{};
+    \draw (-2,2) node[left]{$y_2$};
+    \draw (-3,-3) node[circle,fill,inner sep=1pt]{};
+    \draw (-3,-3) node[left]{$x$};
+    \draw (0,0) circle[radius=6];
+    \draw (4,4) node[]{$A$};
+    \draw[->, thick,blue, dotted] (-3,-3) -- (0,0)node[midway,right=2,]{$y_1-x$};
+    \draw[->, thick,red, dotted] (-3,-3) -- (-2,2) node[midway,left]{$y_2-x$};
+    \draw[->, thick,black!30!green!, dotted] (-3,-3) -- (1,5) node[midway,right]{$(y_1-x)+(y_2-x)$};
+\end{tikzpicture}
+</script>
+</div>
+
+Finally we "add" our "origin" $$x$$ to put this point into our affine space.
+
+<div align= "center">
+<script type="text/tikz">
+    \draw (0,0) node[circle,fill,inner sep=1pt]{};
+    \draw (0,0) node[left,]{$y_1$} ;
+    \draw (-2,2) node[circle,fill,inner sep=1pt]{};
+    \draw (-2,2) node[left]{$y_2$};
+    \draw (-3,-3) node[circle,fill,inner sep=1pt]{};
+    \draw (-3,-3) node[left]{$x$};
+    \draw (0,0) circle[radius=6];
+    \draw (4,4) node[]{$A$};
+    \draw[->, thick,blue, dotted] (-3,-3) -- (0,0)node[midway,right=2,]{$y_1-x$};
+    \draw[->, thick,red, dotted] (-3,-3) -- (-2,2) node[midway,left]{$y_2-x$};
+    \draw[->, thick,black!30!green!, dotted] (-3,-3) -- (1,5) node[midway,right]{$(y_1-x)+(y_2-x)$};
+    \draw (1,5) node[circle,fill,inner sep=1pt]{};
+    \draw (1,5) node[left]{$y_1+y_2$};
+</script>
+</div>
+
+And poof magic $$y_1+y_2=((y_1-x)+(y_2-x))+x$$! 
+
+<div align= "center">
+<script type="text/tikz">
+\begin{tikzpicture}
+    \draw (0,0) node[circle,fill,inner sep=1pt]{};
+    \draw (0,0) node[left,]{$y_1$} ;
+    \draw (-2,2) node[circle,fill,inner sep=1pt]{};
+    \draw (-2,2) node[left]{$y_2$};
+    \draw (-3,-3) node[circle,fill,inner sep=1pt]{};
+    \draw (-3,-3) node[left]{$x$};
+    \draw (0,0) circle[radius=6];
+    \draw (4,4) node[]{$A$};
+    \draw (1,5) node[circle,fill,inner sep=1pt]{};
+    \draw (1,5) node[left]{$y_1+y_2$};
+\end{tikzpicture}
+</script>
+</div>
+
+We are able to "add" points. Hopefully the intuition came to you, especially why we need the $$+x$$.
 
 
 Great! Now that we've sort of unveiled the structure of affine spaces it makes sense to study functions on them, mainly understanding transformations from one affine space to another. We propose that the most general affine transformation takes the following form
