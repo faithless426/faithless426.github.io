@@ -308,7 +308,7 @@ And poof magic $$y_1+y_2=((y_1-x)+(y_2-x))+x$$!
 
 <div align= "center">
 <script type="text/tikz">
-\begin{tikzpicture}
+\begin{tikzpicture}[scale=1,transform shape]
     \draw (0,0) node[circle,fill,inner sep=1pt]{};
     \draw (0,0) node[left,]{$y_1$} ;
     \draw (-2,2) node[circle,fill,inner sep=1pt]{};
@@ -327,6 +327,30 @@ We are able to "add" points. Hopefully the intuition came to you, especially why
 
 
 Great! Now that we've sort of unveiled the structure of affine spaces it makes sense to study functions on them, mainly understanding transformations from one affine space to another. We propose that the most general affine transformation takes the following form
+
+$$f:x\rightarrow Ax+y_0$$
+
+Where $$x,y_0$$ are in a affine modelled vector space.
+
+We can show some cool properties of this (WARNING: Keep track of affine addition)
+
+$$\begin{aligned}f(x_1+x_2)&=f((x_1-x)+(x_2-x)+x)=f(x_1+x_2-x)\\&=A(x_1+x_2-x)+y_0\end{aligned}$$
+
+$$\begin{aligned}f(x_1)+f(x_2)&=(Ax_1+y_0)+(Ax_2+y_0)=A(x_1+x_2)+2y_0=A((x_1-x)+(x_2-x)+x)\\&=A(x_1-x)+A(x_2-x)+Ax+2y_0=Ax_1-Ax+Ax_2-Ax+Ax+2y_0\\&=Ax_1-(Ax+y_0)+Ax_2-(Ax+y_0)+(Ax+y_0)+2y_0\\&=A(x_1+x_2-x)+y_0\end{aligned}$$
+
+Thus proving 
+
+$$f(x_1+x_2)=f(x_1)+f(x_2)$$
+
+There are some further details such as showing that this transformation is indeed the unique form of an affine transformation (use the fact that we can choose our "origin" to be zero and use the facts we proved before) and $$f$$ can be a map preserving the vector space structure underlying our affine space but for now I won't get into that (I probably will in the future)
+
+The last thing I'll mention before delving into Galilean spacetime is the notion of a convex space. 
+
+Simply put a convex space $$C$$ is set such that for any points $$,y\in C$$
+
+$$\{t(y-x)+x|t\in[0,1]\}$$
+
+Thankfully we just need to mention the notion of a convex space as the implications of being in one has very nice properties. From the definition it should be fairly obvious that every affine space is also a convex space. 
 
 
 
