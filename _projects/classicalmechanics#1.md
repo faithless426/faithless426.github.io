@@ -69,7 +69,7 @@ Newton's formulation of Mechanics begins with his namesake equation
 
 $$\begin{aligned} \vec{F} &=m\vec{a}\\ &=m\frac{d\vec{v}}{dt}\\ &=m\frac{d^2\vec{r}}{dt^2} \end{aligned}$$
 
-Where $$\vec{a}$$ is the acceleration, $\vec{v}$ is the velocity, and $$\vec{r}$$ is the position. (I may at times forget the vector notation). We will assume that we live in $$\mathbb{R}^3$$ with time $$t\in\mathbb{R}$$ being a parameter (i.e living in $$\mathbb{R}\times \mathbb{R}^3$$, and for those more mathematically inclined I will later explain this is an affine space $$A^4$$). 
+Where $$\vec{a}$$ is the acceleration, $$\vec{v}$$ is the velocity, and $$\vec{r}$$ is the position. (I may at times forget the vector notation). We will assume that we live in $$\mathbb{R}^3$$ with time $$t\in\mathbb{R}$$ being a parameter (i.e living in $$\mathbb{R}\times \mathbb{R}^3$$, and for those more mathematically inclined I will later explain this is an affine space $$A^4$$). 
 
 We see that Newton's equations gives us $$3N$$ for $$N$$ particles, but for the most part we'll focus on the single particle case. As an example let's do the simple case of a constant force, gravity.
 
@@ -117,7 +117,7 @@ We're very free to make this a function of $$x$$ by making the previous integral
 
 We'll call the quantity $$\frac{1}{2}mv^2$$ the kinetic energy ($$K$$) and refer to the result we derived as the Work-Energy Theorem. I recommend you use this to solve the equation for the harmonic oscillator ($$F=-kx$$) for practice. 
 
-Now to do this in the multi-dimensional case. Imagine we have a path $$\gamma$$ such that $$\gamma:[a,b]\rightarrow \mathbb{R}^3$$, and have a force $$\vec{F}$$ that successfuly takes our mass from point $$a$$ to $$b$$. This curve has some infinitesimal length that we'll call $d\vec{r}$ and the force acts on this every point on this path which is represented as a dot product $$\vec{F}\cdot d\vec{r}$$. We'll go through a similar procress as above, i.e. 
+Now to do this in the multi-dimensional case. Imagine we have a path $$\gamma$$ such that $$\gamma:[a,b]\rightarrow \mathbb{R}^3$$, and have a force $$\vec{F}$$ that successfuly takes our mass from point $$a$$ to $$b$$. This curve has some infinitesimal length that we'll call $$d\vec{r}$$ and the force acts on this every point on this path which is represented as a dot product $$\vec{F}\cdot d\vec{r}$$. We'll go through a similar procress as above, i.e. 
 
 $$\vec{F}\cdot d\vec{r}=m\frac{d\vec{v}}{dt}\cdot d\vec{r}$$
 
@@ -295,9 +295,9 @@ Finally we "add" our "origin" $$x$$ to put this point into our affine space.
     \draw (-3,-3) node[left]{$x$};
     \draw (0,0) circle[radius=6];
     \draw (4,4) node[]{$A$};
-    \draw[->, thick,blue, dotted] (-3,-3) -- (0,0)node[midway,right=2,]{$y_1 - x$};
-    \draw[->, thick,red, dotted] (-3,-3) -- (-2,2) node[midway,left]{$y_2 - x$};
-    \draw[->, thick,black!30!green!, dotted] (-3,-3) -- (1,5) node[midway,right]{$(y_1 - x)+(y_2 - x)$};
+    \draw[->, thick,blue, dotted] (-3,-3) -- (0,0)node[midway,right=2,]{${y_1} - {x}$};
+    \draw[->, thick,red, dotted] (-3,-3) -- (-2,2) node[midway,left]{${y_2} - {x}$};
+    \draw[->, thick,black!30!green!, dotted] (-3,-3) -- (1,5) node[midway,right]{$({y_1} - {x})+({y_2} - {x})$};
     \draw (1,5) node[circle,fill,inner sep=1pt]{};
     \draw (1,5) node[left]{$y_1+y_2$};
 \end{tikzpicture}  
@@ -352,5 +352,81 @@ $$\{t(y-x)+x|t\in[0,1]\}$$
 
 Thankfully we just need to mention the notion of a convex space as the implications of being in one has very nice properties. From the definition it should be fairly obvious that every affine space is also a convex space. 
 
+We're now in a place to talk about Galilean spacetime!
+
+Galilean spacetime is defined by a quadruple (just think of a quadruple as the information needed to fully describe an object) $$\mathcal{G}=(V,\mathcal{E},\tau,g)$$. Where, 
+
+* $$V$$ is a 4 dimensional vector space
+* $$\mathcal{E}$$ is an affine space modeled on $$V$$
+* $$\tau$$ is a map such that $$\tau:V\rightarrow \mathbb{R}$$
+* $$g$$ is an inner product on $$\ker(\tau)$$
+
+A quick reminder that $$\ker(\tau)=\{\vec{v}\in V|\tau(\vec{v})=\vec{0}\}$$ (just the space of vectors of $V$ that gets mapped to the zero vector). 
+
+Points in Galiliean spacetime represent when and where things happen, so we'll call these points events. Based on our definition of this space we can't measure distances and time in the tradition/intuitive way. 
+
+For one remeber that $$x_2-x_1\in V$$ so $$\tau$$ can't measure the times of individual events instead it measures the time between events. As such if $$\tau(x_2-x_1)=0$$ means that the events happen at the same time i.e simultaneous. We'll also note that from our definition of Galilean spacetime, we can only measure distance between simultaneous events. We'll get into how we can measure distances between nonsimultaneous events later as this requires a bit more structure to our theory. 
+
+<div align= "center">
+<script type="text/tikz">
+\begin{tikzpicture}
+     \fill[gray!30!white] (0,0) rectangle (5,5);
+    \draw[dotted,very thick] (1,0) -- (1,5);
+    \draw[dotted,very thick] (2,0) -- (2,5);
+    \draw[dotted,very thick] (3,0) -- (3,5);
+    \draw[dotted,very thick] (4,0) -- (4,5);
+</script>
+</div>
+
+The above figure is how we should think about simultaneous events in Galilean spacetime where the dotted lines represent them. More generally we should think about Galilean spacetime as the following for standard Newtonian physics.
+
+<div align= "center">
+<script type="text/tikz">
+\begin{tikzpicture}[very thick]
+
+    \draw[red] (0,-.25) -- (4,-.25);
+    
+    \draw (-1.5,2) -- (-1.5,9);
+
+    \draw (0,0) -- (-1.5,2);
+    
+    \foreach \x in {0,1,...,4} {
+        \draw[red] (\x,-.15) -- (\x,-.40);}
+
+    \foreach \x in {0,1,...,4} {
+        \draw (\x,0) -- (\x,8);}
+
+
+    \foreach \x in {-0.5,0.5,...,2.5} {
+        \draw (\x,9) -- (\x,8.35);
+    }
+
+
+    \foreach \x in {-1.5,-0.5,...,2.5} {
+        \draw (\x,9) -- (\x+1.5,8)
+        ;}
+
+    \foreach \x in {1,2,...,4}{
+    \draw (\x,0) -- (\x-1.,1.5);}
+
+    \draw (5,4) node[]{\Large $\cdots$};
+
+    \foreach \x in {0,1,...,4} {
+        \draw (\x,-.6) node []{$t_{\x}$}
+        ;}
+
+    \draw (5,-.6) node[]{$\cdots$};
+
+    \draw (2,-1) node[]{$\mathbb{R}$};
+
+    \foreach \x in {-1.5,-0.5,...,2.5} {
+        \draw (\x+.5,9) node[]{$\mathbb{R}^3$};
+    }
+
+\end{tikzpicture}
+</script>
+</div>
+
+We see that simultaneous events will lay on the same plane or in the simpler case the same line.
 
 
