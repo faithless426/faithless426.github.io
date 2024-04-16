@@ -78,40 +78,41 @@
     \draw (1,5) node[circle,fill,inner sep=1pt]{};
     \draw (1,5) node[left]{$y_1+y_2$};
 \end{tikzpicture}
-</script> </div> <p>We are able to “add” points. Hopefully the intuition came to you, especially why we need the \(+x\).</p> <p>Great! Now that we’ve sort of unveiled the structure of affine spaces it makes sense to study functions on them, mainly understanding transformations from one affine space to another. We propose that the most general affine transformation takes the following form</p> \[f:x\rightarrow Ax+y_0\] <p>Where \(x,y_0\) are in a affine modelled vector space.</p> <p>We can show some cool properties of this (WARNING: Keep track of affine addition)</p> \[\begin{aligned}f(x_1+x_2)&amp;=f((x_1-x)+(x_2-x)+x)=f(x_1+x_2-x)\\&amp;=A(x_1+x_2-x)+y_0\end{aligned}\] \[\begin{aligned}f(x_1)+f(x_2)&amp;=(Ax_1+y_0)+(Ax_2+y_0)=A(x_1+x_2)+2y_0=A((x_1-x)+(x_2-x)+x)\\&amp;=A(x_1-x)+A(x_2-x)+Ax+2y_0=Ax_1-Ax+Ax_2-Ax+Ax+2y_0\\&amp;=Ax_1-(Ax+y_0)+Ax_2-(Ax+y_0)+(Ax+y_0)+2y_0\\&amp;=A(x_1+x_2-x)+y_0\end{aligned}\] <p>Thus proving</p> \[f(x_1+x_2)=f(x_1)+f(x_2)\] <p>There are some further details such as showing that this transformation is indeed the unique form of an affine transformation (use the fact that we can choose our “origin” to be zero and use the facts we proved before) and \(f\) can be a map preserving the vector space structure underlying our affine space but for now I won’t get into that (I probably will in the future)</p> <p>The last thing I’ll mention before delving into Galilean spacetime is the notion of a convex space.</p> <p>Simply put a convex space \(C\) is set such that for any points \(,y\in C\)</p> \[\{t(y-x)+x|t\in[0,1]\}\] <p>Thankfully we just need to mention the notion of a convex space as the implications of being in one has very nice properties. From the definition it should be fairly obvious that every affine space is also a convex space.</p> <p>We’re now in a place to talk about Galilean spacetime!</p> <p>Galilean spacetime is defined by a quadruple (just think of a quadruple as the information needed to fully describe an object) \(\mathcal{G}=(V,\mathcal{E},\tau,g)\). Where,</p> <ul> <li>\(V\) is a 4 dimensional vector space</li> <li>\(\mathcal{E}\) is an affine space modeled on \(V\)</li> <li>\(\tau\) is a map such that \(\tau:V\rightarrow \mathbb{R}\)</li> <li>\(g\) is an inner product on \(\ker(\tau)\)</li> </ul> <table> <tbody> <tr> <td>A quick reminder that $$\ker(\tau)={\vec{v}\in V</td> <td>\tau(\vec{v})=\vec{0}}$$ (just the space of vectors of $V$ that gets mapped to the zero vector).</td> </tr> </tbody> </table> <p>Points in Galiliean spacetime represent when and where things happen, so we’ll call these points events. Based on our definition of this space we can’t measure distances and time in the tradition/intuitive way.</p> <p>For one remeber that \(x_2-x_1\in V\) so \(\tau\) can’t measure the times of individual events instead it measures the time between events. As such if \(\tau(x_2-x_1)=0\) means that the events happen at the same time i.e simultaneous. We’ll also note that from our definition of Galilean spacetime, we can only measure distance between simultaneous events. We’ll get into how we can measure distances between nonsimultaneous events later as this requires a bit more structure to our theory.</p> <div align="center"> <script type="text/tikz">
+</script> </div> <p>We are able to “add” points. Hopefully the intuition came to you, especially why we need the \(+x\).</p> <p>Great! Now that we’ve sort of unveiled the structure of affine spaces it makes sense to study functions on them, mainly understanding transformations from one affine space to another. We propose that the most general affine transformation takes the following form</p> \[f:x\rightarrow Ax+y_0\] <p>Where \(x,y_0\) are in a affine modelled vector space.</p> <p>We can show some cool properties of this (WARNING: Keep track of affine addition)</p> \[\begin{aligned}f(x_1+x_2)&amp;=f((x_1-x)+(x_2-x)+x)=f(x_1+x_2-x)\\&amp;=A(x_1+x_2-x)+y_0\end{aligned}\] \[\begin{aligned}f(x_1)+f(x_2)&amp;=(Ax_1+y_0)+(Ax_2+y_0)=A(x_1+x_2)+2y_0=A((x_1-x)+(x_2-x)+x)\\&amp;=A(x_1-x)+A(x_2-x)+Ax+2y_0=Ax_1-Ax+Ax_2-Ax+Ax+2y_0\\&amp;=Ax_1-(Ax+y_0)+Ax_2-(Ax+y_0)+(Ax+y_0)+2y_0\\&amp;=A(x_1+x_2-x)+y_0\end{aligned}\] <p>Thus proving</p> \[f(x_1+x_2)=f(x_1)+f(x_2)\] <p>There are some further details such as showing that this transformation is indeed the unique form of an affine transformation (use the fact that we can choose our “origin” to be zero and use the facts we proved before) and \(f\) can be a map preserving the vector space structure underlying our affine space but for now I won’t get into that (I probably will in the future)</p> <p>The last thing I’ll mention before delving into Galilean spacetime is the notion of a convex space.</p> <p>Simply put a convex space \(C\) is set such that for any points \(,y\in C\)</p> \[\{t(y-x)+x|t\in[0,1]\}\] <p>Thankfully we just need to mention the notion of a convex space as the implications of being in one has very nice properties. From the definition it should be fairly obvious that every affine space is also a convex space.</p> <p>We’re now in a place to talk about Galilean spacetime!</p> <p>Galilean spacetime is defined by a quadruple (just think of a quadruple as the information needed to fully describe an object) \(\mathcal{G}=(V,\mathcal{E},\tau,g)\). Where,</p> <ul> <li>\(V\) is a 4 dimensional vector space</li> <li>\(\mathcal{E}\) is an affine space modeled on \(V\)</li> <li>\(\tau\) is a map such that \(\tau:V\rightarrow \mathbb{R}\)</li> <li>\(g\) is an inner product on \(\ker(\tau)\)</li> </ul> <table> <tbody> <tr> <td>A quick reminder that $$\ker(\tau)={\vec{v}\in V</td> <td>\tau(\vec{v})=\vec{0}}$$ (just the space of vectors of $V$ that gets mapped to the zero vector)</td> </tr> </tbody> </table> <p>Points in Galiliean spacetime represent when and where things happen, so we’ll call these points events. Based on our definition of this space we can’t measure distances and time in the tradition/intuitive way.</p> <p>For one remeber that \(x_2-x_1\in V\) so \(\tau\) can’t measure the times of individual events instead it measures the time between events. As such if \(\tau(x_2-x_1)=0\) means that the events happen at the same time i.e simultaneous. We’ll also note that from our definition of Galilean spacetime, we can only measure distance between simultaneous events. We’ll get into how we can measure distances between nonsimultaneous events later as this requires a bit more structure to our theory.</p> <div align="center"> <script type="text/tikz">
 \begin{tikzpicture}
      \fill[gray!30!white] (0,0) rectangle (5,5);
     \draw[dotted,very thick] (1,0) -- (1,5);
     \draw[dotted,very thick] (2,0) -- (2,5);
     \draw[dotted,very thick] (3,0) -- (3,5);
     \draw[dotted,very thick] (4,0) -- (4,5);
+\end{tikzpicture}
 </script> </div> <p>The above figure is how we should think about simultaneous events in Galilean spacetime where the dotted lines represent them. More generally we should think about Galilean spacetime as the following for standard Newtonian physics.</p> <div align="center"> <script type="text/tikz">
-\begin{tikzpicture}[very thick]
+\begin{tikzpicture}
 
-    \draw[red] (0,-.25) -- (4,-.25);
+    \draw[very thick][red] (0,-.25) -- (4,-.25);
     
-    \draw (-1.5,2) -- (-1.5,9);
+    \draw[very thick] (-1.5,2) -- (-1.5,9);
 
-    \draw (0,0) -- (-1.5,2);
+    \draw[very thick] (0,0) -- (-1.5,2);
     
     \foreach \x in {0,1,...,4} {
-        \draw[red] (\x,-.15) -- (\x,-.40);}
+        \draw[red, very thick] (\x,-.15) -- (\x,-.40);}
 
     \foreach \x in {0,1,...,4} {
-        \draw (\x,0) -- (\x,8);}
+        \draw[very thick] (\x,0) -- (\x,8);}
 
 
     \foreach \x in {-0.5,0.5,...,2.5} {
-        \draw (\x,9) -- (\x,8.35);
+        \draw[very thick] (\x,9) -- (\x,8.35);
     }
 
 
     \foreach \x in {-1.5,-0.5,...,2.5} {
-        \draw (\x,9) -- (\x+1.5,8)
+        \draw[very thick] (\x,9) -- (\x+1.5,8)
         ;}
 
     \foreach \x in {1,2,...,4}{
-    \draw (\x,0) -- (\x-1.,1.5);}
+    \draw[very thick] (\x,0) -- (\x-1.,1.5);}
 
     \draw (5,4) node[]{\Large $\cdots$};
 
@@ -121,7 +122,7 @@
 
     \draw (5,-.6) node[]{$\cdots$};
 
-    \draw (2,-1) node[]{$\mathbb{R}$};
+    \draw(2,-1) node[]{$\mathbb{R}$};
 
     \foreach \x in {-1.5,-0.5,...,2.5} {
         \draw (\x+.5,9) node[]{$\mathbb{R}^3$};
