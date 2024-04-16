@@ -361,7 +361,7 @@ Galilean spacetime is defined by a quadruple (just think of a quadruple as the i
 * $$\tau$$ is a map such that $$\tau:V\rightarrow \mathbb{R}$$
 * $$g$$ is an inner product on $$\ker(\tau)$$
 
-A quick reminder that $$\ker(\tau)=\{\vec{v}\in V|\tau(\vec{v})=\vec{0}\}$$ (just the space of vectors of $V$ that gets mapped to the zero vector). 
+A quick reminder that $$\ker(\tau)=\{\vec{v}\in V|\tau(\vec{v})=\vec{0}\}$$ (just the space of vectors of $V$ that gets mapped to the zero vector) 
 
 Points in Galiliean spacetime represent when and where things happen, so we'll call these points events. Based on our definition of this space we can't measure distances and time in the tradition/intuitive way. 
 
@@ -375,6 +375,7 @@ For one remeber that $$x_2-x_1\in V$$ so $$\tau$$ can't measure the times of ind
     \draw[dotted,very thick] (2,0) -- (2,5);
     \draw[dotted,very thick] (3,0) -- (3,5);
     \draw[dotted,very thick] (4,0) -- (4,5);
+\end{tikzpicture}
 </script>
 </div>
 
@@ -382,32 +383,32 @@ The above figure is how we should think about simultaneous events in Galilean sp
 
 <div align= "center">
 <script type="text/tikz">
-\begin{tikzpicture}[very thick]
+\begin{tikzpicture}
 
-    \draw[red] (0,-.25) -- (4,-.25);
+    \draw[very thick][red] (0,-.25) -- (4,-.25);
     
-    \draw (-1.5,2) -- (-1.5,9);
+    \draw[very thick] (-1.5,2) -- (-1.5,9);
 
-    \draw (0,0) -- (-1.5,2);
+    \draw[very thick] (0,0) -- (-1.5,2);
     
     \foreach \x in {0,1,...,4} {
-        \draw[red] (\x,-.15) -- (\x,-.40);}
+        \draw[red, very thick] (\x,-.15) -- (\x,-.40);}
 
     \foreach \x in {0,1,...,4} {
-        \draw (\x,0) -- (\x,8);}
+        \draw[very thick] (\x,0) -- (\x,8);}
 
 
     \foreach \x in {-0.5,0.5,...,2.5} {
-        \draw (\x,9) -- (\x,8.35);
+        \draw[very thick] (\x,9) -- (\x,8.35);
     }
 
 
     \foreach \x in {-1.5,-0.5,...,2.5} {
-        \draw (\x,9) -- (\x+1.5,8)
+        \draw[very thick] (\x,9) -- (\x+1.5,8)
         ;}
 
     \foreach \x in {1,2,...,4}{
-    \draw (\x,0) -- (\x-1.,1.5);}
+    \draw[very thick] (\x,0) -- (\x-1.,1.5);}
 
     \draw (5,4) node[]{\Large $\cdots$};
 
@@ -417,7 +418,7 @@ The above figure is how we should think about simultaneous events in Galilean sp
 
     \draw (5,-.6) node[]{$\cdots$};
 
-    \draw (2,-1) node[]{$\mathbb{R}$};
+    \draw(2,-1) node[]{$\mathbb{R}$};
 
     \foreach \x in {-1.5,-0.5,...,2.5} {
         \draw (\x+.5,9) node[]{$\mathbb{R}^3$};
