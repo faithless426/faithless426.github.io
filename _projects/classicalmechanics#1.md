@@ -358,8 +358,11 @@ Galilean spacetime is defined by a quadruple (just think of a quadruple as the i
 
 
 $$V$$ is a 4 dimensional vector space
+
 $$\mathcal{E}$$ is an affine space modeled on $$V$$
+
 $$\tau$$ is a map such that $$\tau:V\rightarrow \mathbb{R}$$
+
 $$g$$ is an inner product on $$\ker(\tau)$$
 
 A quick reminder that $$\ker(\tau)=\{\vec{v}\in V|\tau(\vec{v})=\vec{0}\}$$ (just the space of vectors of $V$ that gets mapped to the zero vector) 
