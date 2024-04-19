@@ -356,16 +356,20 @@ We're now in a place to talk about Galilean spacetime!
 
 Galilean spacetime is defined by a quadruple (just think of a quadruple as the information needed to fully describe an object) $$\mathcal{G}=(V,\mathcal{E},\tau,g)$$. Where, 
 
-* $$V$$ is a 4 dimensional vector space
-* $$\mathcal{E}$$ is an affine space modeled on $$V$$
-* $$\tau$$ is a map such that $$\tau:V\rightarrow \mathbb{R}$$
-* $$g$$ is an inner product on $$\ker(\tau)$$
+<ul>
+<li>$$V$$ is a 4 dimensional vector space</li>
+<li>$$\mathcal{E}$$ is an affine space modeled on $$V$$</li>
+<li>$$\tau$$ is a map such that $$\tau:V\rightarrow \mathbb{R}$$</li>
+<li>$$g$$ is an inner product on $$\ker(\tau)$$</li>
+</ul>
 
 A quick reminder that $$\ker(\tau)=\{\vec{v}\in V|\tau(\vec{v})=\vec{0}\}$$ (just the space of vectors of $V$ that gets mapped to the zero vector) 
 
 Points in Galiliean spacetime represent when and where things happen, so we'll call these points events. Based on our definition of this space we can't measure distances and time in the tradition/intuitive way. 
 
+
 For one remember that $$x_2-x_1\in V$$ so $$\tau$$ can't measure the times of individual events instead it measures the time between events. As such if $$\tau(x_2-x_1)=0$$ means that the events happen at the same time i.e simultaneous. We'll also note that from our definition of Galilean spacetime, we can only measure distance between simultaneous events. We'll get into how we can measure distances between nonsimultaneous events later as this requires a bit more structure to our theory. 
+
 
 <div align= "center">
 <script type="text/tikz">
@@ -461,7 +465,6 @@ The above figure is how we should think about simultaneous events in Galilean sp
     \draw (1.5+.5,9) node[]{$\mathbb{R}^3$};
 
     \draw (2.5+.5,9) node[]{$\mathbb{R}^3$};
-
 \end{tikzpicture}
 </script>
 </div>
