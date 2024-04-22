@@ -356,14 +356,6 @@ We're now in a place to talk about Galilean spacetime!
 
 Galilean spacetime is defined by a quadruple (just think of a quadruple as the information needed to fully describe an object) $$\mathcal{G}=(V,\mathcal{E},\tau,g)$$. Where, 
 
-$$V$$ is a 4 dimensional vector space
-
-$$\mathcal{E}$$ is an affine space modeled on $$V$$
-
-$$\tau$$ is a map such that $$\tau:V\rightarrow \mathbb{R}$$
-
-$$g$$ is an inner product on $$\ker(\tau)$$
-
 A quick reminder that $$\ker(\tau)=\{\vec{v}\in V|\tau(\vec{v})=\vec{0}\}$$ (just the space of vectors of $V$ that gets mapped to the zero vector). 
 
 Points in Galiliean spacetime represent when and where things happen, so we'll call these points events. Based on our definition of this space we can't measure distances and time in the tradition/intuitive way. 
