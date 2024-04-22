@@ -458,4 +458,4 @@ The above figure is how we should think about simultaneous events in Galilean sp
 </script>
 </div>
 
-Why isn't it working 
+Why isn't it working A quick reminder that $$\ker(\tau) is just$$
