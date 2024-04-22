@@ -354,7 +354,7 @@ Thankfully we just need to mention the notion of a convex space as the implicati
 
 We're now in a place to talk about Galilean spacetime!
 
-Galilean spacetime is defined by a quadruple (just think of a quadruple as the information needed to fully describe an object) $$\mathcal{G}=(V,\mathcal{E},\tau,g)$$. Where, 
+Galilean spacetime is defined by a quadruple (just think of this as tbe information needed to fully describe an object) $$\mathcal{G}=(V,\mathcal{E},\tau,g)$$
 
 A quick reminder that $$\ker(\tau)=\{\vec{v}\in V|\tau(\vec{v})=\vec{0}\}$$ (just the space of vectors of $V$ that gets mapped to the zero vector). 
 
