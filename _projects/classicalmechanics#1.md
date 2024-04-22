@@ -458,4 +458,4 @@ The above figure is how we should think about simultaneous events in Galilean sp
 </script>
 </div>
 
-Why isn't it working A quick reminder that  $$\ker(\tau)=\{\vec{v}\in V|\tau(\vec{v})=\vec{0}\}$$ (just the space of vectors of $$V$$ that gets mapped to the zero vector)
+Why isn't it working A quick reminder that  $$\ker(\tau)=\{\vec{v}\in V\tau(\vec{v})=\vec{0}\}$$ (just the space of vectors of $$V$$ that gets mapped to the zero vector)
