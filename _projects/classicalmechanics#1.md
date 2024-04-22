@@ -364,3 +364,8 @@ $$\tau$$ is a map such that $$\tau:V\rightarrow \mathbb{R}$$
 
 $$g$$ is an inner product on $$\ker(\tau)$$
 
+A quick reminder that $$\ker(\tau)=\{\vec{v}\in V|\tau(\vec{v})=\vec{0}\}$$ (just the space of vectors of $V$ that gets mapped to the zero vector). 
+
+Points in Galiliean spacetime represent when and where things happen, so we'll call these points events. Based on our definition of this space we can't measure distances and time in the tradition/intuitive way. 
+
+For one remeber that $x_2-x_1\in V$ so $\tau$ can't measure the times of individual events instead it measures the time between events. As such if $\tau(x_2-x_1)=0$ means that the events happen at the same time i.e simultaneous. We'll also note that from our definition of Galilean spacetime, we can only measure distance between simultaneous events. We'll get into how we can measure distances between nonsimultaneous events later as this requires a bit more structure to our theory.
