@@ -358,4 +358,102 @@ Galilean spacetime is defined by a quadruple (just think of this as tbe informat
 
 Points in Galiliean spacetime represent when and where things happen, so we'll call these points events. Based on our definition of this space we can't measure distances and time in the tradition/intuitive way. 
 
-For one remeber that $x_2-x_1\in V$ so $\tau$ can't measure the times of individual events instead it measures the time between events. As such if $\tau(x_2-x_1)=0$ means that the events happen at the same time i.e simultaneous. We'll also note that from our definition of Galilean spacetime, we can only measure distance between simultaneous events. We'll get into how we can measure distances between nonsimultaneous events later as this requires a bit more structure to our theory.
+For one remeber that $$x_2-x_1\in V$$ so $$\tau$$ can't measure the times of individual events instead it measures the time between events. As such if $$\tau(x_2-x_1)=0$$ means that the events happen at the same time i.e simultaneous. We'll also note that from our definition of Galilean spacetime, we can only measure distance between simultaneous events. We'll get into how we can measure distances between nonsimultaneous events later as this requires a bit more structure to our theory.
+
+<div align= "center">
+<script type="text/tikz">
+\begin{tikzpicture}
+     \fill[gray!30!white] (0,0) rectangle (5,5);
+    \draw[dotted,very thick] (1,0) -- (1,5);
+    \draw[dotted,very thick] (2,0) -- (2,5);
+    \draw[dotted,very thick] (3,0) -- (3,5);
+    \draw[dotted,very thick] (4,0) -- (4,5);
+</script>
+</div>
+
+The above figure is how we should think about simultaneous events in Galilean spacetime where the dotted lines represent them. More generally we should think about Galilean spacetime as the following for standard Newtonian physics.
+
+<div align= "center">
+<script type="text/tikz">
+\begin{tikzpicture}
+    \draw[red, very thick] (0,-.25) -- (4,-.25);
+
+    \draw[very thick] (-1.5,2) -- (-1.5,9);
+
+    \draw[very thick] (0,0) -- (-1.5,2);
+
+    \draw[red, very thick] (0,-.15) -- (0,-.40);
+
+    \draw[red, very thick] (1,-.15) -- (1,-.40);
+
+    \draw[red, very thick] (2,-.15) -- (2,-.40);
+
+    \draw[red, very thick] (3,-.15) -- (3,-.40);
+
+    \draw[red, very thick] (4,-.15) -- (4,-.40);
+
+    \draw[very thick] (-.5,9) -- (-.5,8.35);
+
+    \draw[very thick] (.5,9) -- (.5,8.35);
+
+    \draw[very thick] (1.5,9) -- (1.5,8.35);
+
+    \draw[very thick] (2.5,9) -- (2.5,8.35);
+
+    \draw[very thick] (-1.5,9) -- (-1.5+1.5,8);
+
+    \draw[very thick] (-.5,9) -- (-.5+1.5,8);
+
+    \draw[very thick] (.5,9) -- (.5+1.5,8);
+
+    \draw[very thick] (1.5,9) -- (1.5+1.5,8);
+
+    \draw[very thick] (2.5,9) -- (2.5+1.5,8);
+
+    \draw[very thick] (1,0) -- (1-1.,1.5);
+
+    \draw[very thick] (2,0) -- (2-1.,1.5);
+
+    \draw[very thick] (3,0) -- (3-1.,1.5);
+
+    \draw[very thick] (4,0) -- (4-1.,1.5);
+
+    \draw[very thick] (0,0) -- (0,8);
+
+    \draw[very thick] (1,0) -- (1,8);
+
+    \draw[very thick] (2,0) -- (2,8);
+
+    \draw[very thick] (3,0) -- (3,8);
+
+    \draw[very thick] (4,0) -- (4,8);
+
+    \draw (5,4) node[]{\Large $\cdots$};
+
+    \draw (0,-.6) node []{$t_{0}$};
+
+    \draw (1,-.6) node []{$t_{1}$};
+
+    \draw (2,-.6) node []{$t_{2}$};
+
+    \draw (3,-.6) node []{$t_{3}$};
+
+    \draw (4,-.6) node []{$t_{4}$};
+
+    \draw (5,-.6) node[]{$\cdots$};
+
+    \draw (2,-1) node[]{$\mathbb{R}$};
+
+    \draw (-1.5+.5,9) node[]{$\mathbb{R}^3$};
+    
+    \draw (-.5+.5,9) node[]{$\mathbb{R}^3$};
+
+    \draw (.5+.5,9) node[]{$\mathbb{R}^3$};
+
+    \draw (1.5+.5,9) node[]{$\mathbb{R}^3$};
+
+    \draw (2.5+.5,9) node[]{$\mathbb{R}^3$};
+
+\end{tikzpicture}
+</script>
+</div>
