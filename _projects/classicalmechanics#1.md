@@ -393,6 +393,37 @@ The above figure is how we should think about simultaneous events in Galilean sp
     \draw[red, very thick] (1,-.15) -- (1,-.40);
     \draw[red, very thick] (2,-.15) -- (2,-.40);
     \draw[red, very thick] (3,-.15) -- (3,-.40);
+    \draw[red, very thick] (4,-.15) -- (4,-.40);
+    \draw[very thick] (-.5,9) -- (-.5,8.35);
+    \draw[very thick] (.5,9) -- (.5,8.35);
+    \draw[very thick] (1.5,9) -- (1.5,8.35);
+    \draw[very thick] (2.5,9) -- (2.5,8.35);
+    \draw[very thick] (-1.5,9) -- (-1.5+1.5,8);
+    \draw[very thick] (-.5,9) -- (-.5+1.5,8);
+    \draw[very thick] (.5,9) -- (.5+1.5,8);
+    \draw[very thick] (1.5,9) -- (1.5+1.5,8);
+    \draw[very thick] (2.5,9) -- (2.5+1.5,8);
+    \draw[very thick] (1,0) -- (1-1.,1.5);
+    \draw[very thick] (2,0) -- (2-1.,1.5);
+    \draw[very thick] (3,0) -- (3-1.,1.5);
+    \draw[very thick] (4,0) -- (4-1.,1.5);
+    \draw[very thick] (0,0) -- (0,8);
+    \draw[very thick] (1,0) -- (1,8);
+    \draw[very thick] (2,0) -- (2,8);
+    \draw[very thick] (3,0) -- (3,8);
+    \draw[very thick] (4,0) -- (4,8);
+    \draw (0,-.6) node []{$t_{0}$};
+    \draw (1,-.6) node []{$t_{1}$};
+    \draw (2,-.6) node []{$t_{2}$};
+    \draw (3,-.6) node []{$t_{3}$};
+    \draw (4,-.6) node []{$t_{4}$};
+    \draw (5,-.6) node[]{$\cdots$};
+    \draw (2,-1) node[]{$\mathbb{R}$};
+    \draw (-1.5+.5,9) node[]{$\mathbb{R}^3$};
+    \draw (-.5+.5,9) node[]{$\mathbb{R}^3$};
+    \draw (.5+.5,9) node[]{$\mathbb{R}^3$};
+    \draw (1.5+.5,9) node[]{$\mathbb{R}^3$};
+    \draw (2.5+.5,9) node[]{$\mathbb{R}^3$};
 \end{tikzpicture}
 </script>
 </div>
