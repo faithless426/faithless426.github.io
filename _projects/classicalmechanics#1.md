@@ -357,7 +357,7 @@ We're now in a place to talk about Galilean spacetime!
 Galilean spacetime is defined by a quadruple (just think of this as tbe information needed to fully describe an object) $$\mathcal{G}=(V,\mathcal{E},\tau,g)$$
 
 * $$V$$ is a 4 dimensional vector space
-* $$\mathcal{E}$$ is an affine space modeled on $V$
+* $$\mathcal{E}$$ is an affine space modeled on $$V$$
 * $$\tau$$ is a map such that $$\tau:V\rightarrow \mathbb{R}$$
 * $$g$$ is an inner product on $$\ker(\tau)$$
 
@@ -418,6 +418,8 @@ The above figure is how we should think about simultaneous events in Galilean sp
     \draw (3,-.6) node []{$t_{3}$};
     \draw (4,-.6) node []{$t_{4}$};
     \draw (5,-.6) node[]{$\cdots$};
+    \draw (2,-1) node[]{$\mathbb{R}$};
+    \draw (-1.5+.5,9) node[]{$\mathbb{R}^3$};
 \end{tikzpicture}
 </script>
 </div>
