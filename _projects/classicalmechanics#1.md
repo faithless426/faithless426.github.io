@@ -418,9 +418,13 @@ The above figure is how we should think about simultaneous events in Galilean sp
     \draw (3,-.6) node []{$t_{3}$};
     \draw (4,-.6) node []{$t_{4}$};
     \draw (5,-.6) node[]{$\cdots$};
-    \draw (2,-1) node[]{$\mathbb{R}$};
-    \draw (-1.5+.5,9) node[]{$\mathbb{R}^3$};
 \end{tikzpicture}
 </script>
 </div>
+
+Each plane is then $$\mathbb{R}^3$$ at some different time $$t_n$$. We also see that simultaneous events will lay on the same plane or in the simpler case the sameline 
+
+Simultaneous events are important enough that we'll call the set of them $$I_{\mathcal{G}}$$ where 
+
+$$I_{\mathcal{G}}=\{S\subset\mathcal{E}|S \text{ is the collection of simultaneous events}\}$$
 
