@@ -418,12 +418,6 @@ The above figure is how we should think about simultaneous events in Galilean sp
     \draw (3,-.6) node []{$t_{3}$};
     \draw (4,-.6) node []{$t_{4}$};
     \draw (5,-.6) node[]{$\cdots$};
-    \draw (2,-1) node[]{$\mathbb{R}$};
-    \draw (-1.5+.5,9) node[]{$\mathbb{R}^3$};
-    \draw (-.5+.5,9) node[]{$\mathbb{R}^3$};
-    \draw (.5+.5,9) node[]{$\mathbb{R}^3$};
-    \draw (1.5+.5,9) node[]{$\mathbb{R}^3$};
-    \draw (2.5+.5,9) node[]{$\mathbb{R}^3$};
 \end{tikzpicture}
 </script>
 </div>
