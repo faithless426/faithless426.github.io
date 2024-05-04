@@ -428,3 +428,5 @@ Simultaneous events are important enough that we'll call the set of them $$I_{\m
 
 $$I_{\mathcal{G}}=\{S\subset\mathcal{E}|S \text{ is the collection of simultaneous events}\}$$
 
+This then leads to the idea of an observer for simultaneous events.
+
